@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+		function showhide(toggle) {
+			var elementmode = document.getElementById(toggle).style;
+			elementmode.display = (!elementmode.display) ? 'none' : '';
+		}
+		function openclose(toggle) { showhide(toggle); }
+	</script>
+    <title>Tugas pWeb Aria Desta P</title>
+    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="Head">
+        <img src="logo.png" alt="Ini Logo" class="Logo" width="300px" height="80px">
+        <ul class="Menu">
+            <li class="w3-xlarge"><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
+            <li class="w3-xlarge"><a href="index_content.html">KABAR TERKINI</a></li>
+            <li class="w3-xlarge"><a href="javascript:openclose('toggle');"><i class="fa fa-search"></i></a></li>
+        </ul>
+</div>
+<div id="toggle" style="display:none">
+    <div class="search-box">
+        <form class="search-form ">
+        <input type="text" placeholder="Ketikkan kata kunci disini....">
+        <button type="submit">CARI</button>
+        </form>
+    </div>
+</div>
+<div class="Body">
+    <div class="DaftarBox">
+    <div class="Daftar">
+        <table border="0" >
+            <form action="index_signin.html" autocomplete="off">
+                <th colspan="2"><h3> SIGN UP</h3></th>
+                <tr>
+                    <th><label for="fname">First Name</label></th>
+                    <td><input type="text" id="fname" name="firstname" placeholder="Your name.." class="box" ></td>
+                </tr>
+                <tr>
+                    <th><label for="lname">Last Name</label></th>
+                    <td><input type="text" id="lname" name="lastname" placeholder="Your last name.." class="box"></td>
+                </tr>
+                <tr>
+                    <th> <label for="Jk"> Gender </label> </th>
+                    <td colspan="2"><input type="radio" id = "pria" name="Jk"><label for="pria">Male</label>
+                    <input type="radio" id = "Perempuan" name="Jk"><label for="Perempuan">Female</label></td>
+                </tr>
+                <tr>
+                    <th><label for="Email">Email</label></th>
+                    <td><input type="email" name="Email" id="Email" placeholder="@gmail.com" class="box"></td>
+                </tr>
+                <tr>
+                    <th><label for="password">Password</label></th>
+                    <td><input type="password" id="password" name="password" class="box"></td>
+                </tr>
+                <tr>
+                    <th><label for="password">Confirm Password</label></th>
+                    <td><input type="password" id="password" name="password" class="box"></td>
+                <tr>
+                <tr>
+                    <th colspan="2"><input type="submit" value="SUBMIT" class="button"></th>
+                </tr>
+              </form>
+        </table>
+    </div>
+</div>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="jquery.backstretch.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
