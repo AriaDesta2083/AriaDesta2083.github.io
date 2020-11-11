@@ -1,8 +1,17 @@
+function sayHello(){
+    yourName = document.getElementById("username").value;
+    if (yourName == "" || !yourName)
+        alert("Maaf Masukkan Username Anda Terlebih Dahulu")
+    else
+        alert("Hallo "+yourName+" Selamat Datang Di Tani IT")
+}
+
 function showhide(toggle) {
     var elementmode = document.getElementById(toggle).style;
     elementmode.display = (!elementmode.display) ? 'none' : '';
 }
 function openclose(toggle) { showhide(toggle); }
+
 
 function mypassword() {
     var x = document.getElementById("password");
@@ -12,6 +21,7 @@ function mypassword() {
       x.type = "password";
     }
 }
+
 
 const initBg = (autoplay = true) => {
     const bgImgsNames = ['kebun.jpg', 'Gandum.jpg', 'tani.jpg' , 'Teknologi.jpg'];
