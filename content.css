@@ -433,10 +433,4 @@ body{
     padding: 5px;
 }
 
-/* if screen adroid */
 
-@media screen and ( max-width: 576px){
-    .comment {
-        width: 100%;
-    }
-}
