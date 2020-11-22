@@ -96,7 +96,7 @@ body{
 
 /* if screen android */
 
-@media screen and ( max-width: 576px){
+@media screen and ( max-width: 800px){
     .Head{
         height: 80px;
     }
@@ -249,7 +249,7 @@ body{
 
 /* if screen android */
 
-@media screen and ( max-width: 576px){
+@media screen and ( max-width: 800px ){
     .Body{
         flex-wrap: wrap;
     }
@@ -364,7 +364,7 @@ body{
 
 /* If screen adroid */
 
-@media screen and ( max-width: 576px){
+@media screen and ( max-width: 800px){
     .share a {
         text-align: center;
         padding: 5px 10px;
